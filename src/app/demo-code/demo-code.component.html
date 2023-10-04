@@ -1,0 +1,10 @@
+<form [formGroup]="tagForm" (ngSubmit)="addTag()">
+  <input type="text" formControlName="newTag" placeholder="Add a tag" />
+  <button type="submit">Add</button>
+</form>
+<div class="tag-list">
+  <div *ngFor="let tag of tags" class="tag">
+    {{ tag }}
+    <button (click)="removeTag(tag)">Remove</button>
+  </div>
+</div>

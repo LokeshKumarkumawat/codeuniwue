@@ -1,0 +1,16 @@
+
+
+<div class="row">
+  <div class="col-12">
+    <div class="card-deck-wrapper card-containera">
+      <div class="card-deck page-contenta" *ngFor="let featuredVideo of featuredVideos">
+        <div class="card mb-4">
+
+          <app-video-card [video]="featuredVideo"></app-video-card>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

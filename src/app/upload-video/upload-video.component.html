@@ -1,0 +1,62 @@
+<div class="main-content">
+
+  <div class="page-content">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-12">
+          <div class="car">
+            <div class="card-body">
+
+              <!-- <h4 class="card-title">Dropify</h4>
+                          <p class="card-subtitle mb-4">Override your input files with style. Your so fresh input file — Default version.</p> -->
+
+              <!-- disabled="disabled" data-default-file="assets/images/media/sm-6.jpg" -->
+
+
+                <input type="file" name="fileInput" #fileInput (change)="onFileSelected($event)" class="dropify"
+                  data-height="100" data-max-file-size="100M" />
+
+
+              <br>
+
+                <button *ngIf="!uploading && ifFileSelected" type="button" (click)="uploadFile()"
+                class="btn btn-outline-upload btn-rounded  btn-block waves-effect waves-light">UPLOAD
+                FILE</button>
+
+              <button *ngIf="uploading && ifFileSelected" type="button" (click)="uploadFile()" disabled
+                class="btn btn-outline-primary btn-rounded  btn-block waves-effect waves-light">
+                <span class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span>
+                UPLOADING...</button>
+
+
+
+
+
+
+            </div> <!-- end card-body-->
+          </div> <!-- end card-->
+        </div> <!-- end col -->
+      </div>
+      <!-- end row-->
+
+    </div> <!-- container-fluid -->
+  </div>
+  <!-- End Page-content -->
+
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          2020 © Opatix.
+        </div>
+        <div class="col-sm-6">
+          <div class="text-sm-right d-none d-sm-block">
+            Design & Develop by Myra
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>

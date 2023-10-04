@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+body
+{
+  background-color: #111317;
+}
+
+
+
+
+
+::-webkit-scrollbar-track
+{
+
+	border-radius: 10px;
+	background-color: #242731;
+}
+
+::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #242731;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #7a7388;
+	/* background-color: #AEAECD; */
+}

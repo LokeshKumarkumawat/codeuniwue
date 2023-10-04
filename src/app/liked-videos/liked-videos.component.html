@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card-deck-wrapper card-containera">
+      <div class="card-deck page-contenta" *ngFor="let likes of myvideoslikes">
+        <div class="card mb-4">
+
+          <app-video-card [video]="likes"></app-video-card>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

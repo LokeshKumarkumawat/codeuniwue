@@ -1,0 +1,51 @@
+<header id="page-topbar">
+  <div class="navbar-header">
+
+    <div class="d-flex align-items-left">
+
+      <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
+        id="vertical-menu-btn">
+        <i class="fa fa-fw fa-bars"></i>
+      </button>
+
+
+        <button routerLink="/upload-video" type="button" class="btn navbtnn header-item waves-effect  waves-light">
+          <i class="bx bxs-cloud-upload"></i>
+          <span class=" navspan ml-2">Upload Video</span>
+        </button>
+
+
+
+
+
+
+
+    </div>
+    <div class="d-flex align-items-center mr-3">
+      <!-- *ngIf="isAuthenticated"  -->
+      <div *ngIf="isAuthenticated" class="dropdown d-inline-block">
+        <button type="button" class="btn navbtnn header-item waves-effect  waves-light" id="page-header-user-dropdown"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="gradient-border-bg" src="assets/images/user.jpg" alt="Header Avatar">
+          <span class=" navspan ml-2">{{username}}</span>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item d-flex align-items-center justify-content-between" (click)="logOff()">
+            <span>Log Out</span>
+          </a>
+        </div>
+      </div>
+      <div *ngIf="!isAuthenticated">
+        <button type="button" (click)="login()" class="btn btn-outline-primary waves-effect waves-light">Login</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+<!-- https://www.freepik.com/free-psd/flat-design-creativity-concept-youtube-banner_54166382.htm#from_view=detail_serie -->
+<!-- https://www.freepik.com/free-psd/flat-design-creativity-concept-youtube-banner_54166384.htm#from_view=detail_serie -->
+<!--  -->

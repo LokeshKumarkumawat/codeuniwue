@@ -1,0 +1,114 @@
+
+
+.card {
+  margin: 20px;
+  /* padding: 20px; */
+  border-radius: 5px;
+}
+
+
+.video-user{
+  color: #878790 !important;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 3px !important;
+}
+
+i{
+  vertical-align: middle;
+}
+
+.video-title {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 500 !important;
+}
+
+.video-uploader {
+  color: #666;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.like-dislike {
+  margin: 10px 0;
+
+}
+
+.like-button {
+  background-color: #242731;
+  color: #aeaecd;
+  border: none;
+  padding: 8px 6px;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  border-radius: 20px 0px 0px 20px;
+  font-weight: 600;
+}
+
+.dislike-button{
+  background-color: #242731;
+  color: #aeaecd;
+  border: none;
+  padding: 8px 6px;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  border-left: 1px solid #aeaecd;
+
+  border-radius: 0px 20px 20px 0px;
+  font-weight: 600;
+
+}
+
+.follow-button{
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 25px;
+  margin-right: 25px;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px;
+  font-weight: 600;
+}
+
+
+.unfollow-button{
+  background-color: #242731;
+  color: #aeaecd;
+  border: none;
+  padding: 8px 25px;
+  margin-right: 25px;
+  cursor: pointer;
+  border-radius: 20px 20px 20px 20px;
+  font-weight: 600;
+}
+
+
+.follow-button i{
+font-size: 20px;
+}
+
+.unfollow-button:hover,
+.like-button:hover,
+.dislike-button:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.follow-button:hover{
+  background-color: #618CFF;
+  color: #ffffff;
+
+}
+
+.video-description {
+  font-size: 16px;
+  color: #878790 !important;
+}
+
+
+.card-bottom-box{
+  padding: 0px 10px 0px 10px ;
+}

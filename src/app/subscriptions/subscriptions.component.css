@@ -1,0 +1,36 @@
+.card-containera {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 0.9rem;
+
+}
+
+.gradient-border-bg {
+  height: 46px;
+  width: 46px;
+  padding: 3px;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(45deg, slateblue, coral) border-box;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+
+
+.video-user{
+  color: #878790 !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.video-user i{
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.card-fix{
+  display: flex;
+  align-items: center;
+}

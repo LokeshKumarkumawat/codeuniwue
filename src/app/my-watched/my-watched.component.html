@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card-deck-wrapper card-containera">
+      <div class="card-deck page-contenta" *ngFor="let mywatche of mywatches">
+        <div class="card mb-4">
+
+          <app-video-card [video]="mywatche"></app-video-card>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

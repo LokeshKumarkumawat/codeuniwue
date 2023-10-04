@@ -1,0 +1,50 @@
+.card-containera {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.9rem;
+
+}
+
+
+
+.video-title{
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 3px !important;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Number of lines you want to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 2.6em;
+  max-width: 100%;
+}
+
+
+
+.video-user{
+  color: #878790 !important;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 3px !important;
+}
+
+.video-user i{
+  vertical-align: middle;
+}
+
+
+.video-views{
+  color: #878790 !important;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0 !important;
+}
+
+
+img{
+border-radius: 0.35rem;
+}

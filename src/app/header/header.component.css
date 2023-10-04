@@ -1,0 +1,30 @@
+.navbtnn
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navspan{
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF ;
+
+}
+.gradient-border-bg {
+  height: 36px;
+  width: 36px;
+  padding: 3px;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(45deg, slateblue, coral) border-box;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+
+.btn i{
+  vertical-align: middle;
+  color: #707179;
+  font-size: 28px;
+}
+

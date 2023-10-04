@@ -1,0 +1,19 @@
+.carousel-item img{
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px
+}
+
+
+.slider-card{
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+
+.ccard{
+  height: 25vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #618CFF;
+}

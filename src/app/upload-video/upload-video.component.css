@@ -1,0 +1,19 @@
+
+
+.btn{
+  font-weight: 600;
+}
+
+
+.btn-outline-upload {
+  color: #878790;
+  border-color: #878790;
+  border-width: 2px;
+}
+
+.btn-outline-upload:hover {
+  color: #fff;
+  background-color: #878790;
+  border-color: #878790;
+
+}

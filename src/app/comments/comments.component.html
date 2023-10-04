@@ -1,0 +1,37 @@
+
+<div class="row">
+  <div class="col-xl-12">
+    <div class="card mt-4">
+      <div class="card-body mb-4">
+        <form [formGroup]="commentsForm">
+          <div class="form-group">
+            <textarea [formControlName]="'comment'" class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Leave a comment"></textarea>
+            <button  type="submit" (click)="postComment()" class="comment-button waves-effect  waves-light">comment</button>
+          </div>
+
+        </form>
+      </div>
+      <!-- end card-body-->
+    </div>
+    <!-- end card -->
+
+
+
+
+
+    <div class="card comment-body" *ngFor="let comment of commentsDto">
+      <div class="card-body">
+        <h6 class="video-user">{{comment.authorId}} <i class="bx bxs-check-circle"></i></h6>
+        <p class="video-description">{{comment.commentText}}</p>
+
+      </div>
+      <!-- end card-body-->
+    </div>
+
+
+
+
+
+  </div> <!-- end col -->
+
+</div>

@@ -1,0 +1,149 @@
+<div class="main-content">
+
+  <div class="page-content">
+    <div class="container-fluid">
+
+
+
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="card">
+            <div class="card-body">
+
+
+
+
+
+
+
+
+
+
+              <form class="form-horizontal" [formGroup]="saveVideoDetailsForm">
+
+                <div class="form-group">
+                  <label for="simpleinput">Title</label>
+                  <input [formControl]="title" type="text" id="simpleinput" class="form-control"
+                    placeholder="Enter your text">
+                </div>
+
+                <div class="form-group">
+                  <label for="simpleinput">Description</label>
+                  <input [formControl]="description" type="text" id="simpleinput" class="form-control"
+                    placeholder="Enter your text">
+                </div>
+
+
+
+
+                <div class="form-group">
+                  <label for="simpleinput">ADD Tags</label>
+                  <input type="text" formControlName="newTag" id="simpleinput" class="form-control"
+                    placeholder="Enter your text">
+                  <button class="hidden-button" (click)="addTag()">Add</button>
+
+                  <div class="tag-box col-10">
+                    <div *ngFor="let tag of tags" class=" row">
+                      <span class="tag">{{ tag }} <span (click)="removeTag(tag)" class="x">X</span> </span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- mdi-close-thick -->
+
+
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Video Status</label>
+                  <select [formControl]="videoStatus" class="form-control" id="exampleFormControlSelect1">
+                    <option value="PUBLIC">PUBLIC</option>
+                    <option value="PRIVATE">PRIVATE</option>
+                    <option value="UNLISTED">UNLISTED</option>
+                  </select>
+                </div>
+
+
+
+
+
+
+
+                <div class="form-group">
+                  <label for="simpleinput">Upload Thumbnail</label>
+
+
+                  <div class="row">
+
+                    <div class="col-6">
+                      <input type="file" name="fileInput" #fileInput (change)="onFileSelected($event)" class="dropify"
+                        data-height="270" data-max-file-size="100M" />
+
+                      <br>
+
+                      <button *ngIf="!uploading && ifFileSelected" type="button" (click)="onUpload()"
+                        class="btn btn-outline-upload btn-rounded  btn-block waves-effect waves-light">UPLOAD
+                        FILE</button>
+
+                      <button *ngIf="uploading && ifFileSelected" type="button" (click)="onUpload()" disabled
+                        class="btn btn-outline-upload btn-rounded  btn-block waves-effect waves-light">
+                        <span class="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true"></span>
+                        UPLOADING...</button>
+                    </div>
+
+
+                    <div class="col-6">
+                      <div class="form-group video-size">
+                        <app-video-player [videoUrl]="videoUrl"></app-video-player>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+                  <div class="form-group">
+                      <div class="row">
+                        <div  *ngIf="!uploading" class="col-12">
+                          <button type="submit" (click)="saveVideo()"
+                          class="btn btn-outline-primary  btn-rounded btn-block waves-effect waves-light">SAVE DATA</button>
+                        </div>
+
+                        <div *ngIf="uploading"  class="col-12">
+                          <button type="submit" (click)="saveVideo()" disabled
+                          class="btn btn-outline-primary  btn-rounded btn-block waves-effect waves-light">SAVE DATA</button>
+                        </div>
+                      </div>
+                  </div>
+
+
+
+
+
+
+
+              </form>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- end card -->
+          </div> <!-- end col -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden-upload">
+    <app-upload-video></app-upload-video>
+  </div>
